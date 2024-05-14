@@ -1,0 +1,9 @@
+<!-- @format -->
+
+{% extends "base.html" %} {% block content %}
+<h1>Welcome {{user}}</h1>
+<div class="flex gap-2">
+    <a class="btn btn-warning" href="{% url "add_musician" %}">Add Musician</a>
+    <a class="btn btn-warning" href="{% url "create_album" %}">Add Album</a>
+</div>
+{% endblock %}
