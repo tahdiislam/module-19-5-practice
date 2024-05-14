@@ -6,6 +6,5 @@ class AllAlbumView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         albums = Album.objects.all()
-        print("hello hello 👌", albums)
         context['albums'] = albums
         return context
